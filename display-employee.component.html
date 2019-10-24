@@ -1,0 +1,17 @@
+<html>
+  <h1>
+  Display Employee Details
+</h1>
+<table border="1" class="table">
+  <tr class="success">
+    <th (click)="sort('id')">EId</th>
+    <th (click)="sort('name')">Ename</th>
+    <th>Operation</th>
+  </tr>
+    <tr *ngFor="let emp1 of employees| orderBy:column:order">
+    <td>{{emp1.id}}</td>
+    <td>{{emp1.name|uppercase}}</td>
+    <td><button (click)=delete(emp1.id) type="button" class="btn btn-danger">DELETE</button></td>
+  </tr>
+</table>
+</html>

@@ -1,0 +1,19 @@
+<h1>
+ Add Employee Details
+</h1>
+<form #details="ngForm" (ngSubmit)="add(details.value)">
+<table>
+  <tr>
+   <td>Id</td>
+   <td><input type="text" name="id" ngModel/></td>
+   </tr><br>
+   
+   <tr>
+    <td>Name</td>
+    <td><input type="text" name="name" ngModel/></td>
+    </tr><br>
+    <tr>
+    <button  class="btn btn-info" type="submit" name="text">ADD EMPLOYEE</button>
+    </tr>
+</table>
+</form>
